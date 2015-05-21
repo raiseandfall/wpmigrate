@@ -1,0 +1,38 @@
+{
+  "name": "wordpress-db-migrate",
+  "version": "0.0.0",
+  "description": "A tool to migrate Wordpress databases between environments",
+  "main": "index.js",
+  "scripts": {
+    "hint": "jshint --reporter node_modules/jshint-stylish/stylish.js index.js",
+    "dev": "npm run watch",
+    "test": "mocha tests.js",
+    "watch": "watchify *.js -o 'npm run hint && npm run test'",
+    "build:js": "npm run hint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/raiseandfall/slugify-files.git"
+  },
+  "engines": {
+    "node": ">=0.10.x"
+  },
+  "author": {
+    "name": "Matthieu COLLE",
+    "url": "https://github.com/raiseandfall"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "jshint": "^2.6.3",
+    "jshint-stylish": "^1.0.1",
+    "mocha": "*",
+    "watchify": "^3.1.0"
+  },
+  "dependencies": {
+    "shelljs": "^0.5.0"
+  }
+}
