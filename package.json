@@ -1,5 +1,5 @@
 {
-  "name": "wordpress-db-migrate",
+  "name": "wpmigrate",
   "version": "0.0.0",
   "description": "A tool to migrate Wordpress databases between environments",
   "main": "index.js",
@@ -12,20 +12,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/raiseandfall/slugify-files.git"
+    "url": "git@github.com:raiseandfall/wpmigrate.git"
   },
   "engines": {
     "node": ">=0.10.x"
   },
+  "bin": {
+    "wpmigrate": "cli.js"
+  },
+  "keywords": [],
   "author": {
     "name": "Matthieu COLLE",
     "url": "https://github.com/raiseandfall"
   },
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/raiseandfall/wpmigrate/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/raiseandfall/wpmigrate",
   "devDependencies": {
     "jshint": "^2.6.3",
     "jshint-stylish": "^1.0.1",
@@ -33,6 +37,13 @@
     "watchify": "^3.1.0"
   },
   "dependencies": {
-    "shelljs": "^0.5.0"
+    "cli": "^0.6.6",
+    "dateformat": "^1.0.11",
+    "exit": "^0.1.2",
+    "fs-extra": "^0.18.3",
+    "lodash": "^3.9.1",
+    "meow": "^3.1.0",
+    "shelljs": "^0.5.0",
+    "strip-json-comments": "^1.0.2"
   }
 }
