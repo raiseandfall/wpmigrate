@@ -1,9 +1,14 @@
 # WORDPRESS DB MIGRATE
 
 > A CL tool to migrate a Wordpress Database between different environments ( dev, staging, prod, ... ).
+  
+Inspired by [grunt-wordpress-deploy](https://github.com/webrain/grunt-wordpress-deploy/).
+Modified to run as a Node package.
 
-## Requirements
+
+## REQUIREMENTS
 - ```mysqldump```
+
 
 ## USAGE
 
@@ -11,7 +16,11 @@
 
 This file contains the configuration of the different environments databases. You can create as much env as you want.
 Each environment object contains its database credentials as well as the URL of the Wordpress project on this environment.
-_NOTE_ The ```url``` field needs to have a protocol & the full host used in the Wordpress config. No trailing slash !
+__NOTE__ 
+- The ```url``` field needs to have a protocol & the full host used in the Wordpress config. No trailing slash !
+- The ```options``` object contains the backup directory name you want to use. Backups are made every time any migration happens.
+
+
 
 ```json
 {
