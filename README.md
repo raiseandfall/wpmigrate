@@ -15,7 +15,7 @@ Modified to run as a Node package.
 ### 1. Create a configuration file ```.wprc``` 
 This file can be wherever on your computer but you'll need to call wpmigrate on the same level. 
 
-### ATTENTION: It's safe to place the file out of the git repository since it should never be tracked by git (contains database credentials). 
+#### IMPORTANT: It's safer to place the file outside of the git rep since it should never be tracked by git (contains database credentials). 
 
 This file contains the configuration of the different environments databases. You can create as much env as you want.
 Each environment object contains its database credentials as well as the URL of the Wordpress project on this environment.
