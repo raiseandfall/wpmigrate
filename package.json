@@ -37,7 +37,7 @@
     "watchify": "^3.1.0"
   },
   "dependencies": {
-    "cli": "^0.6.6",
+    "cli": "^1.0.1",
     "dateformat": "^1.0.11",
     "exit": "^0.1.2",
     "fs-extra": "^0.18.3",
